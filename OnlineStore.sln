@@ -3,7 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.APIs", "OnlineStore.APIs\OnlineStore.APIs.csproj", "{187ED4DE-5B6B-4C2A-9277-9A24CEB22A0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Core", "OnlineStore.Core\OnlineStore.Core.csproj", "{711979C9-E3C9-4B73-96FC-5D5749E8069D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Repository", "OnlineStore.Repository\OnlineStore.Repository.csproj", "{D86FD9D5-8A99-497F-8752-F83EF2EFCABC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Service", "OnlineStore.Service\OnlineStore.Service.csproj", "{151D3A97-0B5A-4B72-8189-2DBEC2305E26}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{187ED4DE-5B6B-4C2A-9277-9A24CEB22A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{187ED4DE-5B6B-4C2A-9277-9A24CEB22A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{187ED4DE-5B6B-4C2A-9277-9A24CEB22A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{187ED4DE-5B6B-4C2A-9277-9A24CEB22A0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{711979C9-E3C9-4B73-96FC-5D5749E8069D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{711979C9-E3C9-4B73-96FC-5D5749E8069D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{711979C9-E3C9-4B73-96FC-5D5749E8069D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{711979C9-E3C9-4B73-96FC-5D5749E8069D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D86FD9D5-8A99-497F-8752-F83EF2EFCABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D86FD9D5-8A99-497F-8752-F83EF2EFCABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D86FD9D5-8A99-497F-8752-F83EF2EFCABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D86FD9D5-8A99-497F-8752-F83EF2EFCABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{151D3A97-0B5A-4B72-8189-2DBEC2305E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{151D3A97-0B5A-4B72-8189-2DBEC2305E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{151D3A97-0B5A-4B72-8189-2DBEC2305E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{151D3A97-0B5A-4B72-8189-2DBEC2305E26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
