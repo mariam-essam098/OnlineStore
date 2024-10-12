@@ -6,7 +6,7 @@ namespace OnlineStore.APIs
 {
 	public class Program
 	{
-		public static void Main(string[] args)
+		public static async Task Main(string[] args)
 		{
 			var builder = WebApplication.CreateBuilder(args);
 
@@ -31,13 +31,33 @@ namespace OnlineStore.APIs
 
 
 
-
-			
-
-
-
-
 			var app = builder.Build();
+
+			////Apply any migrations
+			//StoreDbContext Context = new StoreDbContext();
+			//Context.Database.MigrateAsync();
+
+			var scope= app.Services.CreateScope();
+			var services=scope.ServiceProvider;
+			var context= services.GetRequiredService<StoreDbContext>();
+			var loggerFactory = services.GetRequiredService<ILoggerFactory>();
+
+
+			try
+			{
+				await context.Database.MigrateAsync();
+			}
+			catch (Exception ex)
+			{
+				var logger = loggerFactory.CreateLogger<Program>();
+				logger.LogError(ex, message: "there is a problem during apply migrations ");
+            }
+
+
+
+
+
+
 
 			// Configure the HTTP request pipeline.
 			if (app.Environment.IsDevelopment())
