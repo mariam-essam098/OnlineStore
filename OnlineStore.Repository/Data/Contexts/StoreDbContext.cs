@@ -27,10 +27,10 @@ namespace OnlineStore.Repository.Data.Contexts
 		}
 
 
-		DbSet<Product> Products { get;set; } 
-		DbSet<ProductBrand> Brands { get;set; }
+		public DbSet<Product> Products { get;set; } 
+		public DbSet<ProductBrand> Brands { get;set; }
 
-		DbSet<ProductType> Types { get;set; }
+		public DbSet<ProductType> Types { get;set; }
 
 
 
